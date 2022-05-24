@@ -1,0 +1,450 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="stylee.css">
+</head>
+<body>
+    <header>
+        <p><hr><br><hr></p>
+        <h1><p align="center"> <u><b>NIEIT</b></u> </p></h1>
+        <p align="center"> <img src="data:image/png;base64,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" width="125px"></p>
+    </header>
+    <main>
+        <article>
+        <p><hr><br><hr></p>    
+        <h2><p align="center"><u><i><b>HOME</b></i></u></p></h2>
+        <p align="center"><img src="https://clgonline.in/static/all_collages/img/nie-institute-of-technology-nieit-mysore.jpg" width="400px"></p>
+        <h4><i><p>Innovation and Inclusion being the key values of an institution in a globalised era, our educational institution cannot be an exception. NIEIT, as an institute of academic excellence and achievement, was established in 2008. Today the college stands proud with 15years of splendid achievement and commitment to the mission of producing competent professionals responsive to the technological needs of society. The last few years have been extremely successful and satisfying in terms of accomplishments and accolades in scholastic and infrastructural development areas. NIE and NIEIT are promoted by the same management and being in the education field for over 70years.</p></i></h4>
+        <table align="center" border="2">
+            <tr>
+                <td><p align="left">CONTACT NUMBER: 0821 240 3733<br>ADDRESS: No 50, Koorgi Village, Hootagalli Industrial Area,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next to BEML, Mysuru, Karnataka 570018 </p></td>
+            </tr>
+        </table>         
+        <h2><p align="left"><b><u>FACULTY INFORMATION</u></b></p></h2>
+        <a href="https://nieit.ac.in/electrical-engineering/staff-members/">1. ELECTRICAL AND ELECTRONICS:</a><br>
+        <a href="https://nieit.ac.in/computer-science-engineering/staff-members/">2. COMPUTER SCIENCE ENGINEERING:</a><br>
+        <a href="https://nieit.ac.in/information-science-engineering/staff-members/">3. INFORMATION SCIENCE:</a><br>
+        <a href="https://nieit.ac.in/electronics-communication-engineering/staff-members/">4. ELECTRONICS AND COMMUNICATION:</a><br>
+        <a href="https://nieit.ac.in/mechanical-engineering/staff-members/">5. MECHANICAL ENGINEERING:</a>
+       </article>
+    </main>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontastic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div class="page" id="hidden-element">
+      <header class="header">
+        <nav class="navbar">
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">
+                  <h2><div class="brand-text brand-big" align="center"><strong>Scholarship Portal</strong></div></h2>
+                <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch"> 
+        <nav class="side-navbar">
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"></div>
+            <div class="title">
+              <h5 class="h5" id="suserName"></h1>
+              <strong id="sMIS"></strong>
+            </div>
+          </div>
+        </nav>
+        <div class="content-inner">
+          <div id="eligible-scholarships">
+			<div class="col-lg-12 top-margin">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">                       
+                        <table class="table table-bordered table-hover text-center" id="eligibleScTable">
+                        </table>
+                      <div id="eligibleScModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                        <div role="document" class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div>
+                                 <div class="form-group row"> 
+                          			<label class="col-sm-4 form-control-label">Name: NIEIT Scholarship</label>
+                        	 		<div class="col-sm-8">
+                            			<p class="form-control" id="dsName"></p>
+                          			</div>
+                        		 </div>
+                        		 <div class="form-group row">
+                          			<label class="col-sm-4 form-control-label">Scholarship Type: General</label>
+                        	 		<div class="col-sm-8">
+                            			<p class="form-control" id="dsType"></p>
+                          			</div>
+                        		 </div>
+                        		 <div class="form-group row">
+                        	 		<div class="col-sm-8">
+                            			<p class="form-control" id="dsRemark"></p>
+                          			</div>
+                        		 </div>
+                        		 <div class="form-group row">
+                          			<label class="col-sm-4 form-control-label">Last Date Of Application: 30/05/2022</label>
+                        	 		<div class="col-sm-8">
+                            			<p class="form-control" id="dlda"></p>
+                          			</div>
+                        		 </div>
+                        		 <div class="form-group row">
+                          			<label class="col-sm-4 form-control-label">Scholarship Amount (in Rs): 2000</label>
+                        	 		<div class="col-sm-8">
+                            			<p type="text" class="form-control" id="dsamount"></p>
+                          			</div>
+                        		 </div>
+                        		 <div class="form-group row">
+                          			<label class="col-sm-4 form-control-label">No of Students Eligible: 50</label>
+                        	 		<div class="col-sm-8">
+                            			<p type="number" class="form-control" id="dstudents"></p>
+                          			</div>
+                        		 </div>
+                              </div>
+                            </div>
+                            <!--<div class="modal-footer">
+                              <button type="button" id="closeDesc" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                              <button type="button" id="dApply" class="btn btn-primary">Apply</button>-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+			</div>
+			<div id="profile">
+				<div class="col-lg-12 top-margin">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4" align="center"><u>Profile</u></h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="form-horizontal">
+                    	<div class="form-group row">
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">First Name</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="firstName" maxlength="15" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Last Name</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="lastName" maxlength="15" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">CGPA</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="profile-cgpa" maxlength="4" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Gender</label>
+                          <div class="col-sm-6 select">
+                            <select id="profile-gender" class="form-control">
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">YEAR</label>
+                          <div class="col-sm-6 select">
+                            <select id="profile-class" YEAR="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Branch</label>
+                          <div class="col-sm-6 select">
+                            <select id="profile-branch" class="form-control">
+                              <option>ECE</option>
+                              <option>EEE</option>
+                              <option>ME</option>
+                              <option>ISE</option>
+                              <option>CSE</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Contact No</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="profile-contactNo" maxlength="10" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-4 offset-sm-2">
+                            <button type="submit" onclick="saveProfile()" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
+                        <div id="alert-box-profile" class="offset-sm-2 col-sm-6">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+			</div>
+			<div id="contactAdmin">
+				<div class="col-lg-12 top-margin">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4" align="center"><u>Submit your queries to Admin</u></h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="form-horizontal">
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Subject</label>
+                          <div class="col-sm-6">
+                            <input id="contactAdminSubject" type="text" placeholder="Subject" class="form-control form-control-success" maxlength="30" value="">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Message</label>
+                          <div class="col-sm-6">
+                            <textarea id="contactAdminMessage" placeholder="short description of query" class="form-control" rows="3" maxlength="100"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group row">       
+                          <div class="col-sm-6 offset-sm-2">
+                            <input type="submit" value="Send" class="btn btn-primary" onclick="adminMessage()">
+                          </div>
+                        </div>
+                        <div class="offset-sm-2 col-sm-4" id="alertMessageAdmin"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+			</div>
+			<div id="applyForScholarship">
+				<div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                      <h3 class="h4" align="center"><u>Scholarsip Form</u></h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="form-horizontal">
+                      	<div class="col-sm-8" id="sFormAlert"> </div>
+                      	<div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Full Name</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="fullName" maxlength="64" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Date Of Birth</label>
+                          <div class="col-sm-6">
+                            <input type="date" id="dob" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Local Address</label>
+                          <div class="col-sm-6">
+                            <textarea id="cAdd" maxlength="64" rows="4" cols="20" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Permanant Address</label>
+                          <div class="col-sm-6">
+                            <textarea id="pAdd" rows="4" cols="20" maxlength="64" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Email</label>
+                          <div class="col-sm-6">
+                            <input type="email" id="email" maxlength="64" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Ph / Mobile</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="contactNo" maxlength="11" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">YEAR</label>
+                          <div class="col-sm-6 select">
+                            <select id="class" class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Branch</label>
+                          <div class="col-sm-6 select">
+                            <select id="branch" class="form-control">
+                              <option>ECE</option>
+                              <option>EEE</option>
+                              <option>ME</option>
+                              <option>ISE</option>
+                              <option>CSE</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Marks obtained at 10th</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="marksSSC" maxlength="5" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Marks obtained at PUC</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="marksHSC" maxlength="5" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Marks at CET/AIEEE/DIPLOMA</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="marksCompet" maxlength="5" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">CGPA of last year</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="cpi" maxlength="4" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">SGPA of last semester</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="spi" maxlength="4" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Annual Family Income</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="annualIncome" maxlength="16" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Source of Income</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="incomeSource" maxlength="16" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Members in family : Brothers</label>
+                          <div class="col-sm-6">
+                            <input type="number" id="familyBrothers" min="0" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Members in family : Sisters</label>
+                          <div class="col-sm-6">
+                            <input type="number" id="familySisters" min="0" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Total members in family</label>
+                          <div class="col-sm-6">
+                            <input type="number" id="familyMembers" min="1" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Brothers studying in</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="brothersEducation" maxlength="16" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Sisters studying in</label>
+                          <div class="col-sm-6">
+                            <input type="text" id="sistersEducation" maxlength="16" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Immovable property : Own/rented/house/land(irrigated, not-irrigated), industry/shop etc.</label>
+                          <div class="col-sm-6">
+                            <textarea id="immovableProperty" maxlength="64" rows="4" cols="20" class="form-control"></textarea>
+                          </div>
+                        </div>school
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Have you applied for, or are in receipt of any loan/assistance of arship to meet your educational expenses? If yes, give details</label>
+                          <div class="col-sm-6">
+                            <textarea id="otherBenefits" maxlength="128" rows="4" cols="20" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Your financial requirments to support education</label>
+                          <div class="col-sm-6">
+                            <textarea id="finReq" maxlength="64" rows="4" cols="20" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2 form-control-label">Any other achievements in the field of sports, arts, cultural etc.</label>
+                          <div class="col-sm-6">
+                            <textarea id="achievements" maxlength="128" rows="4" cols="20" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-sm-6 offset-sm-2">
+                            <button type="submit" id="applicationSubmit" class="btn btn-primary"> <a href="127.0.0.1,3306">submit</a></button>
+                            <button type="submit" id="applicationSave" class="btn btn-primary">Save</button>
+                            </a>
+                          </div>
+                        </div>
+					            </div>
+                    </div>
+                  </div>
+                </div>
+				<div  id="applyForScholarshipForm" class="form">
+				</div>	
+			</div>
+          <footer class="main-footer">
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="vendor/jquery/jquery.dataTables.min.js"></script>
+    <script src="vendor/bootstrap/js/dataTables.bootstrap.min.js"></script>
+    <script src="bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/login.js"> </script>
+	<script src="js/student.js"> </script>
+  </body>
+</html>    
+</body>
+</html>
